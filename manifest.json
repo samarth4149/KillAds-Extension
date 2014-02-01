@@ -1,0 +1,14 @@
+{
+  "manifest_version":2,
+  "name": "Kill Ads",
+  "version": "1.0",
+  "description": "My first Chrome extension.",
+  "content_scripts": [
+  {
+    "matches": ["http://*/*","https://*/*"],
+    "js": ["2.js"],
+    "run_at": "document_end",
+    "all_frames": true
+  }
+  ]
+}
